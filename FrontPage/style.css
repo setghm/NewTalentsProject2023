@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 20px 5%;
+}
+
+/*==========================================================================*/
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.logo {
+    width: 90px;
+    aspect-ratio: 1 / 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(logo.svg);
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 75%;
+}
+
+.texto h1 {
+    width: max-content;
+    font-size: 15pt;
+    font-weight: normal;
+}
+
+.texto h2 {
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+/*==========================================================================*/
+
+.controllers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.charts {
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.chart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.chart-title {
+    font-size: 16pt;
+    font-weight: normal;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*==========================================================================*/
+
+button {
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#updateButton {
+    border: 1px solid rgba(150, 30, 30, 1);
+    background-color: rgba(150, 30, 30, .8);
+}
+
+#updateButton.stopped {
+    border-color: rgba(30, 30, 150, 1);
+    background-color: rgba(30, 30, 150, .8);
+}
