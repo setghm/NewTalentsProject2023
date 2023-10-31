@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no,width=device-width,default-scale=1.0">
+        <!--meta name="color-scheme" content="light dark"-->
+        <title>Consumo energético</title>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script src="chart.js" defer></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="title">
+            <div class="logo"></div>
+            <div class="texto">
+                <h1>Nuevos talentos</h1>
+                <h2>Estimación de consumos energéticos y análisis de huella de carbono de algoritmos de inteligencia artificial compilados en hardware CPUs, GPUs y TPUs</h2>
+            </div>
+        </div>
+
+        <div class="controllers">
+            <div class="charts">
+                <div class="chart">
+                    <div class="chart-title">Consumo energético</div>
+                    <canvas id="potencia"></canvas>
+                </div>
+                <div class="chart min">
+                    <div class="chart-title">Corriente eléctrica</div>
+                    <canvas id="corriente"></canvas>
+                </div>
+            </div>
+            <div class="data">
+                <button id="updateButton">Dejar de actualizar</button>
+            </div>
+        </div>
+    </body>
+</html>
