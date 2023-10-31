@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include "ClienteThingSpeak.h"
 
-#define WIFI_SSID "UPQ-Alumnos"
-#define WIFI_PWD  ""
+#define WIFI_SSID "UPQ-Invitados"
+#define WIFI_PWD  "upq2023+"
 
 #define THINGSPEAK_CHANNEL  2293246
 #define THINGSPEAK_APIKEY   "GJ1O4PWAOGMR7SD2"
